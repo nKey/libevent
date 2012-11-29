@@ -3197,7 +3197,11 @@ evhttp_new_object(void)
 	    EVHTTP_REQ_POST |
 	    EVHTTP_REQ_HEAD |
 	    EVHTTP_REQ_PUT |
-	    EVHTTP_REQ_DELETE);
+	    EVHTTP_REQ_DELETE |
+	    EVHTTP_REQ_OPTIONS |
+	    EVHTTP_REQ_TRACE |
+	    EVHTTP_REQ_CONNECT |
+	    EVHTTP_REQ_PATCH);
 
 	TAILQ_INIT(&http->sockets);
 	TAILQ_INIT(&http->callbacks);
